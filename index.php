@@ -20,7 +20,7 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
 
         if (password_verify($password, $row["password"])) {
             $_SESSION['user_name'] = $user_name;
-            header("Location: phpDB/home.php");
+            header("Location: Inicio/index.html");
             exit;
         } else {
             $error_message = "Contraseña incorrecta";
